@@ -1,0 +1,25 @@
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 40px;
+    pointer-events: none;
+    animation: spin infinite 20s linear;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: spin infinite 20s linear;
+    }
+  }
